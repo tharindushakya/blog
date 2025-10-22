@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global dark theme */
+body {
+  @apply bg-gray-900 text-gray-100 font-sans;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  @apply font-medium text-indigo-400 no-underline;
+}
+
+a:hover {
+  @apply text-indigo-300;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+/* Buttons */
+button {
+  @apply rounded-lg border border-transparent px-4 py-2 text-base font-medium bg-gray-800 cursor-pointer transition-colors;
+}
+
+button:hover {
+  @apply border-indigo-400;
+}
+
+button:focus {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Optional responsive tweaks */
+@media (prefers-color-scheme: light) {
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  a:hover {
+    @apply text-indigo-500;
+  }
+
+  button {
+    @apply bg-gray-100;
+  }
+}
